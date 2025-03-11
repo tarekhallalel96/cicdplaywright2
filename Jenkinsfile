@@ -13,7 +13,7 @@ pipeline {
 
         stage('Exécuter les tests Playwright') {
             steps {
-                sh 'npx playwright test --grep @contenu' 
+                sh 'npx playwright test --reporter=line,allureplaywright'
             }
         }
 
@@ -40,7 +40,7 @@ pipeline {
             allure includeProperties:
             false,
             jdk: '',
-            results: [[path: 'allure-results']]
+            results: [[path: './allure-results']]
         }
         
         failure {
