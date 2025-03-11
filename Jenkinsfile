@@ -40,9 +40,7 @@ pipeline {
             allure includeProperties:
             false,
             jdk: '',
-            results: [[path: '**/allure-results']]
-            archiveArtifacts artifacts: '**/results.xml', fingerprint: true 
-            archiveArtifacts artifacts: '**/playwright-report/**/*', allowEmptyArchive: true
+            results: [[path: 'allure-results']]
         }
         
         failure {
