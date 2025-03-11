@@ -12,7 +12,7 @@ pipeline {
         stage('installer les dependances ') {
             steps {
                 sh 'npm ci'  
-            }
+            }}
 
         stage('Run Playwright Tests') {
             steps {
