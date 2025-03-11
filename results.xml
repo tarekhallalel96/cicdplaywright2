@@ -1,0 +1,26 @@
+<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="0" time="8.013986999999998">
+<testsuite name="testproductpage.spec.ts" timestamp="2025-03-11T12:51:46.557Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.279" errors="0">
+<testcase name="Tests Produits › [@contenu] Tester le contenu de la page" classname="testproductpage.spec.ts" time="1.279">
+<system-out>
+<![CDATA[Test terminé !
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="testproductpage.spec.ts" timestamp="2025-03-11T12:51:46.557Z" hostname="firefox" tests="1" failures="0" skipped="0" time="3.475" errors="0">
+<testcase name="Tests Produits › [@contenu] Tester le contenu de la page" classname="testproductpage.spec.ts" time="3.475">
+<system-out>
+<![CDATA[Test terminé !
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="testproductpage.spec.ts" timestamp="2025-03-11T12:51:46.557Z" hostname="webkit" tests="1" failures="0" skipped="0" time="1.918" errors="0">
+<testcase name="Tests Produits › [@contenu] Tester le contenu de la page" classname="testproductpage.spec.ts" time="1.918">
+<system-out>
+<![CDATA[Test terminé !
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

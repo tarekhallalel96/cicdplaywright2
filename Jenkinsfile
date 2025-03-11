@@ -16,7 +16,7 @@ pipeline {
 
         stage('Exécuter les tests Playwright') {
             steps {
-                sh 'npx playwright test --grep @contenu --reporter=junit,html' 
+                sh 'npx playwright test --grep @contenu' 
             }
         }
 
@@ -42,8 +42,8 @@ pipeline {
 
     post {
         always {
-            archiveArtifacts artifacts: '**/results.xml', fingerprint: true // Archive le rapport XML
-            archiveArtifacts artifacts: '**/playwright-report/**/*', allowEmptyArchive: true // Archive HTML
+            archiveArtifacts artifacts: '**/results.xml', fingerprint: true 
+            archiveArtifacts artifacts: '**/playwright-report/**/*', allowEmptyArchive: true /
         }
         failure {
             echo "Les tests ont échoué ! Vérifiez les rapports dans Jenkins."
