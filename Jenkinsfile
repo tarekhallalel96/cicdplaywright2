@@ -44,9 +44,9 @@ pipeline {
             archiveArtifacts artifacts: '**/results.xml', fingerprint: true 
             archiveArtifacts artifacts: '**/playwright-report/**/*', allowEmptyArchive: true
         }
-            }
+        
         failure {
             echo "Les tests ont échoué ! Vérifiez les rapports dans Jenkins."
         }
-    }
+    }}
 
