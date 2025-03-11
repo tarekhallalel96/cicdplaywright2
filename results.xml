@@ -1,22 +1,22 @@
-<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="0" time="8.013986999999998">
-<testsuite name="testproductpage.spec.ts" timestamp="2025-03-11T12:51:46.557Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.279" errors="0">
-<testcase name="Tests Produits › [@contenu] Tester le contenu de la page" classname="testproductpage.spec.ts" time="1.279">
+<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="0" time="37.933294000000004">
+<testsuite name="testproductpage.spec.ts" timestamp="2025-03-11T13:15:33.567Z" hostname="chromium" tests="1" failures="0" skipped="0" time="6.724" errors="0">
+<testcase name="Tests Produits › Tester le contenu de la page" classname="testproductpage.spec.ts" time="6.724">
 <system-out>
 <![CDATA[Test terminé !
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="testproductpage.spec.ts" timestamp="2025-03-11T12:51:46.557Z" hostname="firefox" tests="1" failures="0" skipped="0" time="3.475" errors="0">
-<testcase name="Tests Produits › [@contenu] Tester le contenu de la page" classname="testproductpage.spec.ts" time="3.475">
+<testsuite name="testproductpage.spec.ts" timestamp="2025-03-11T13:15:33.567Z" hostname="firefox" tests="1" failures="0" skipped="0" time="20.905" errors="0">
+<testcase name="Tests Produits › Tester le contenu de la page" classname="testproductpage.spec.ts" time="20.905">
 <system-out>
 <![CDATA[Test terminé !
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="testproductpage.spec.ts" timestamp="2025-03-11T12:51:46.557Z" hostname="webkit" tests="1" failures="0" skipped="0" time="1.918" errors="0">
-<testcase name="Tests Produits › [@contenu] Tester le contenu de la page" classname="testproductpage.spec.ts" time="1.918">
+<testsuite name="testproductpage.spec.ts" timestamp="2025-03-11T13:15:33.567Z" hostname="webkit" tests="1" failures="0" skipped="0" time="17.228" errors="0">
+<testcase name="Tests Produits › Tester le contenu de la page" classname="testproductpage.spec.ts" time="17.228">
 <system-out>
 <![CDATA[Test terminé !
 ]]>

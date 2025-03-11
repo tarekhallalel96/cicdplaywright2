@@ -4,9 +4,6 @@ pipeline {
             image 'mcr.microsoft.com/playwright:v1.51.0-noble'
         }
     }
-
-
-
     stages {
         stage('Installer les dépendances') {
             steps {
@@ -25,7 +22,6 @@ pipeline {
                 junit '**/results.xml' 
             }
         }
-
         stage('Publier le rapport HTML') {
             steps {
                 publishHTML(target: [
@@ -39,9 +35,12 @@ pipeline {
             }
         }
     }
-
     post {
         always {
+            allure includeProperties:
+            false,
+            jdk: '',
+            results: [[path: '**/allure-results']]
             archiveArtifacts artifacts: '**/results.xml', fingerprint: true 
             archiveArtifacts artifacts: '**/playwright-report/**/*', allowEmptyArchive: true
         }
