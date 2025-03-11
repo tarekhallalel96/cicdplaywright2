@@ -49,4 +49,4 @@ pipeline {
             echo "Les tests ont échoué ! Vérifiez les rapports dans Jenkins."
         }
     }
-}
+
