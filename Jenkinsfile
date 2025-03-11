@@ -35,13 +35,16 @@ pipeline {
             }
         }
     }
+
     post {
         always {
             allure includeProperties:
             false,
             jdk: '',
-            results: [[path: './allure-results']]
+            results: [[path: 'target/allure-results']],
+            archiveArtifacts artifacts: 'allure-results/*'
         }
+
         
         failure {
             echo "Les tests ont échoué ! Vérifiez les rapports dans Jenkins."
