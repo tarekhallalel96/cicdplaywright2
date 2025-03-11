@@ -19,7 +19,9 @@ test.describe("Tests Produits", () => {
         await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html');
     });
 
-    test("[@contenu] Tester le contenu de la page", async ({ page }) => {
+    test("Tester le contenu de la page",{
+        tag: ['@contenu', '@regression']
+      }, async ({ page }) => {
         const products = await page.locator("[data-test='inventory-item']").all(); 
 
         for (const product of products) {
